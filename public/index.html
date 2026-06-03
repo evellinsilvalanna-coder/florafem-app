@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#E91E8C" />
+    <meta name="description" content="FloraFem — Monitoramento de ciclo menstrual e fertilidade. Modo tentante, ovulação, sintomas e compartilhamento com parceiro." />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="FloraFem" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="FloraFem — Ciclo & Fertilidade" />
+    <meta property="og:description" content="Acompanhe seu ciclo, fertilidade e saúde reprodutiva com inteligência e carinho." />
+    <meta property="og:type" content="website" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>FloraFem 🌸</title>
+    <style>
+      * { box-sizing: border-box; }
+      body { margin: 0; background: #fff0f5; }
+      #root { min-height: 100vh; }
+      .splash {
+        display: flex; flex-direction: column;
+        align-items: center; justify-content: center;
+        min-height: 100vh;
+        background: linear-gradient(135deg, #E91E8C 0%, #9C27B0 100%);
+        color: white; font-family: 'Inter', sans-serif;
+      }
+      .splash h1 { font-size: 48px; margin: 16px 0 8px; }
+      .splash p { font-size: 18px; opacity: 0.85; }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <div class="splash">
+        <div style="font-size:80px">🌸</div>
+        <h1>FloraFem</h1>
+        <p>Ative o JavaScript para usar o aplicativo.</p>
+      </div>
+    </noscript>
+    <div id="root">
+      <div class="splash">
+        <div style="font-size:80px;animation:bounce 1s infinite alternate">🌸</div>
+        <h1>FloraFem</h1>
+        <p>Carregando...</p>
+      </div>
+    </div>
+    <style>
+      @keyframes bounce { from { transform: scale(1); } to { transform: scale(1.1); } }
+    </style>
+  </body>
+</html>
